@@ -106,3 +106,43 @@ section {
 .container-03 img{
     width: 100%;
 }
+
+/* Task - 04 */
+.container-04 {
+    display: grid;
+    border: 2px solid black;
+    padding: 20px;
+    grid-gap: 10px;
+}
+.child-03 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 10px;
+    border: 1px solid rgb(231, 231, 231);
+}
+.child-03-01 img {
+    width: 100%;
+    vertical-align: middle;
+}
+.child-03-02 {
+    padding: 20px;
+}
+.child-03-02 p {
+    color: rgba(7, 2, 17, 0.60);
+    font-size: 18px;
+    line-height: 25px;
+}
+.child-03-02 button {
+    padding: 15px 25px;
+    border: none;
+    font-size: 20px;
+    background-color: #586c7b;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    .child-03 {
+        grid-template-columns: 1fr;
+    }
+}
